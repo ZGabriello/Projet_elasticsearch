@@ -25,3 +25,8 @@ curl -s -H "Content-Type: application/json" -XPOST "http://localhost:9200/confir
 curl -s -H "Content-Type: application/json" -XPOST "http://localhost:9200/deaths/default/_bulk?pretty" -u 'elastic:secret' --data-binary @deaths.evo.json
 
 curl -s -H "Content-Type: application/json" -XPOST "http://localhost:9200/recovered/default/_bulk?pretty" -u 'elastic:secret' --data-binary @recovered.evo.json
+
+# Lancer Cassandra 
+
+sudo docker run --name abdata-cassandra -p 7000:7000 -p 7001:7001 -p 7199:7199 -p 9042:9042 -p 9160:9160 -d cassandra:latest
+
