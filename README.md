@@ -1,8 +1,8 @@
 # Projet_elasticsearch
 
-Le projet a pour objectif de prendre des données sur le covid (les cas confirmés, les cas de decès et les cas de rétablissements) et grâce à une ETL réalisée par un script python.
-Le script prend les données en question qui sont contenu dans un csv et les met dans un dataframe pandas. Puis ensuite fait une transformation des données pour tout normalisé et enfin charge ces données dans ElasticSearch et puis dans Cassandra.
-Toutes les étapes du projet est automatisé avec un docker-compose et un Dockerfile.
+# Description 
+
+Le but de ce projet est de collecter, d'analyser et de visualiser les données de Covid-19 à partir de sources publiques telles que l'Organisation mondiale de la santé (OMS) ou les centres de contrôle et de prévention des maladies (CDC).L'étudiant devra d'abord collecter les données de Covid-19 et les stocker dans une base de données Cassandra,en utilisant les outils appropriés pour extraire les données et les charger dans la base de données.Ensuite, l'étudiant devra indexer les données dans Elastic Search pour faciliter leur recherche et leur traitement. Il devra utiliser les fonctionnalités d'Elastic Search pour créer des index, définir des mappings et configurer des paramètres de recherche.Enfin, l'étudiant devra utiliser Kibana pour visualiser les données de Covid-19 et créer des tableaux de bord interactifs pour suivre l'évolution de la pandémie. Il pourra utiliser les fonctionnalités de visualisation de Kibana pour créer des graphiques, des cartes et des diagrammes pour mieux comprendre les données.
 
 # Commandes 
 
