@@ -1,6 +1,12 @@
 # Projet_elasticsearch
 
-Commandes à faire dans le terminal en attendant le docker-compose : 
+Le projet a pour objectif de prendre des données sur le covid (les cas confirmés, les cas de decès et les cas de rétablissements) et grâce à une ETL réalisée par un script python.
+Le script prend les données en question qui sont contenu dans un csv et les met dans un dataframe pandas. Puis ensuite fait une transformation des données pour tout normalisé et enfin charge ces données dans ElasticSearch et puis dans Cassandra.
+Toutes les étapes du projet est automatisé avec un docker-compose et un Dockerfile.
+
+# Commandes 
+
+Commandes à faire dans le terminal sans le docker-compose : 
 
 # Lancer le container elasticsearch
 
@@ -30,3 +36,6 @@ curl -s -H "Content-Type: application/json" -XPOST "http://localhost:9200/recove
 
 sudo docker run --name abdata-cassandra -p 7000:7000 -p 7001:7001 -p 7199:7199 -p 9042:9042 -p 9160:9160 -d cassandra:latest
 
+# Docker compose
+
+sudo docker-compose up 
